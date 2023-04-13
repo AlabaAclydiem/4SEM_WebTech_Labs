@@ -1,0 +1,24 @@
+<div class="form-div">
+	<form action="../auth.php" method="POST" class="form-sign">
+		<label for="email">Enter your email: </label>
+		<input type="text" name="email" id="name" required">
+		<label for="password">Enter your password: </label>
+		<input type="password" name="password" id="password" required">
+		<div class="password-block">
+			<input id="unique" type="checkbox" onclick="toggle()">
+			<div><p>Show Password</p></div>
+		</div>
+		<input type="submit" value="Sign in">
+		<div>{{ check }}</div>
+ 	</form>
+ 	<script>
+ 		function toggle() {
+			var x = document.getElementById("password");
+			if (x.type === "password") {
+				x.type = "text";
+			} else {
+				x.type = "password";
+			}
+		}
+ 	</script>
+</div>

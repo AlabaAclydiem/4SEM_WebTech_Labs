@@ -7,6 +7,14 @@
 		return str_replace($old, $new, $template);
 	}
 	
+	$spec = "\!\#\$\%\&\'\*\+\-\/\=\?\^\_\`\{\|\}\~\.";
+	$letter = "a-z0-9"; 
+	define("PATTERN", "/^[{$letter}{$spec}]+@([{$letter}\-]+\.)+[{$letter}\-]+$/i");
+	
+	function check($email) {
+		return preg_match(PATTERN, $email);
+	}
+	
 	function base($css, $title, $content) {
 		$main = get("templates/main.html");
 		$main = replace($main, "{{ css }}", $css);

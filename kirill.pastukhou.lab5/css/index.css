@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+body {
+	padding-top: 6.6em;
+	background-color: #f2f3f4;
+	overflow-x: hidden;
+}
+
+.nav-bar {
+	position: relative;
+	z-index: 100;
+	padding: 0.8em;
+	height: 4em;
+	display: flex;
+	justify-content: space-around;
+	background-color: ivory;
+	position: fixed;
+	outline: gray solid;
+}
+
+.nav-logo {
+	object-fit: contain;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-link {
+	padding: 0.1em 0.8em 0.1em 0.8em;
+	color: black;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-family: "Open Sans";
+}
+
+.nav-link:hover {
+	outline: none;
+    border-color: gray;
+    box-shadow: 0 0 2em gray;
+    border-radius: 1em;
+}
+
+@media screen and (max-width: 760px) {
+	.nav-links {
+		display: none;
+	}
+}
+
+.main {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.main-heading {
+	align-self: center;
+	margin-bottom: 1em;
+	font-size: 2.4em;
+}
+
+.main-box {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#lavender {
+	background-color: #e7dfea;
+	border-radius: 84% 38% 93% 28% / 10% 47% 29% 22%;
+	transform: rotate(3deg);
+}
+
+#light-green {
+	background-color: #d6ece3;
+	border-radius: 27% 83% 47% 27% / 76% 23% 91% 34%;
+	transform: rotate(3deg);
+}
+
+#light-blue {
+	background-color: #d9eaf0;
+	border-radius: 30% 87% 65% 12% / 12% 47% 36% 18%;
+	transform: rotate(-3deg);
+}
+
+#light-yellow {
+	background-color: #f9eed7;
+	border-radius: 92% 74% 19% 84% / 36% 82% 48% 29%;
+	transform: rotate(-3deg);
+}
+
+.main-intro {
+	font-size: 6em;
+	font-family: "Times New Roman";
+	font-style: italic;
+	padding: 1.5em 0.3em 1.5em 0.3em;
+}
+
+@media screen and (max-width: 1020px) {
+	#lavender, #light-green, #light-blue, #light-yellow {
+		border-radius: 0%;
+	}
+	.main-intro {
+		padding: 0.05em 0.3em 0.05em 0.3em;
+	}
+}
+
+footer {
+	position: relative;
+	z-index: 101;
+	margin-top: 1em;
+}
+
+
+.main-article {
+	font-size: 1em;
+	font-family: "Open Sans";
+	padding: 0.5em 1.5em 0.5em 1.5em;
+}
+
+
+.footer-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: ivory;
+	align-items: center;
+	outline: gray solid;
+}
+
+.footer-article {
+	font-size: 1.2em;
+	font-family: "Open Sans";
+	line-height: 4;
+}

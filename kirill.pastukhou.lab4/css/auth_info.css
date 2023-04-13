@@ -1,0 +1,163 @@
+* {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+body {
+	padding-top: 6.6em;
+	background-color: #f2f3f4;
+	overflow-x: hidden;
+}
+
+.nav-bar {
+	position: relative;
+	z-index: 100;
+	padding: 0.8em;
+	height: 4em;
+	display: flex;
+	justify-content: space-around;
+	background-color: ivory;
+	position: fixed;
+	outline: gray solid;
+}
+
+.nav-logo {
+	object-fit: contain;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-link {
+	padding: 0.1em 0.8em 0.1em 0.8em;
+	color: black;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-family: "Open Sans";
+}
+
+.nav-link:hover {
+	outline: none;
+    border-color: gray;
+    box-shadow: 0 0 2em gray;
+    border-radius: 1em;
+}
+
+@media screen and (max-width: 760px) {
+	.nav-links {
+		display: none;
+	}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 2em;
+}
+
+.selector {
+	flex-grow: 1;
+	outline: gray solid;
+	padding: 1.5em;
+	background-color: ivory;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 2em;
+	font-size: 1em;
+	font-family: "Open Sans";
+}
+
+select {
+	margin-bottom: 1em;
+	margin-top: 0.3em;
+	width: 3.3em;
+	height: 2.5em;
+	text-align: center; 
+}
+
+#submit {
+	width: 17em;
+	height: 2.5em;
+}
+
+.person-logo-div {
+	outline: gray solid;
+	padding: 3.5em;
+	background-color: ivory;
+}
+
+.person-intro {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	font-size: 1.2em;
+}
+
+.person-quote {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	font-style: italic;
+	font-size: 2em;
+}
+
+.vertical-line1 {
+	background-color: gray;
+	align-self: stretch;
+	width: 0.6em;
+	margin-right: 1em;
+}
+
+.vertical-line2 {
+	background-color: gray;
+	align-self: stretch;
+	width: 0.4em;
+	margin-right: 1em;
+}
+
+.person-text {
+	font-size: 1em;
+	font-family: "Open Sans";
+	padding: 0.5em 1.5em 0.5em 1.5em;
+}
+
+footer {
+	position: relative;
+	z-index: 101;
+	margin-top: 1em;
+}
+
+
+.main-article {
+	font-size: 1em;
+	font-family: "Open Sans";
+	padding: 0.5em 1.5em 0.5em 1.5em;
+}
+
+
+.footer-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: ivory;
+	align-items: center;
+	outline: gray solid;
+}
+
+.footer-article {
+	font-size: 1.2em;
+	font-family: "Open Sans";
+	line-height: 4;
+}

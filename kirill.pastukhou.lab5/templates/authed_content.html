@@ -1,0 +1,36 @@
+<section class="selector">
+				<label for="ei-select">E or I:</label>
+				<select name="ei-select" id="ei-select" form="form-choose">
+					<option {{ e }} value="E">E</option>
+					<option {{ i }} value="I">I</option>
+				</select>	
+				<label for="sn-select">S or N:</label>
+				<select name="sn-select" id="sn-select" form="form-choose">
+					<option {{ s }} value="S">S</option>
+					<option {{ n }} value="N">N</option>
+				</select>
+				<label for="tf-select">T or F:</label>
+				<select name="tf-select" id="tf-select" form="form-choose">
+					<option {{ t }} value="T">T</option>
+					<option {{ f }} value="F">F</option>
+				</select>
+				<label for="jp-select">J or P:</label>
+				<select name="jp-select" id="jp-select" form="form-choose">
+					<option {{ j }} value="J">J</option>
+					<option {{ p }} value="P">P</option>
+				</select>
+				<form action="persons.php" id="form-choose" method="GET">
+					<input type="submit" id="submit">
+				</form>
+			</section>
+			<section class="main">
+					<div class="person-logo-div"><img class="person-logo" src="{{ person_logo }}" /></div>
+					<div class="person-intro">
+						<div class="vertical-line1"></div>
+						<div class="person-text">{{ person_text }}</div>
+					</div>
+					<div class="person-quote">
+						<div class="person-text">{{ person_quote }}</div>
+						<div class="vertical-line2"></div>
+					</div>
+</section>
