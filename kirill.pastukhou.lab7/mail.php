@@ -11,13 +11,13 @@
         $mail->isSMTP(); 
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;  
-        $mail->Username = 'pastukhou.kirill@gmail.com';
-        $mail->Password = 'zdlvxtborttpjenu';
+        $mail->Username = 'baba@gmail.com';
+        $mail->Password = 'dhrhdisjfvrkdifj';
         $mail->SMTPSecure = 'ssl'; 
         $mail->Port = 465; 
     
-        $mail->addAddress('kirill.pastukhov@gmail.com');
-        $mail->setFrom('pastukhou.kirill@gmail.com');
+        $mail->addAddress('baba@gmail.com');
+        $mail->setFrom('baba@gmail.com');
         $mail->isHTML(true); 
         $mail->Subject = "Request from web-site"; 
         $mail->Body = $_POST['mail_text']; 
